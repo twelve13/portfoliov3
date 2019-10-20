@@ -1,0 +1,184 @@
+* {
+	margin: 0;
+	padding: 0;	
+}
+
+body {
+	font-family: 'Viga', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+.main {
+	align-content: flex-start;
+	display: flex;
+	flex-wrap: wrap;
+	height: 100vh;
+	justify-content: center;
+	margin: auto;
+	width: 96%;
+}
+
+
+header {
+	border: solid 1px black;
+	display: flex;
+	height: 130px;
+	margin-top: 20px;
+	width: 100%;
+}
+
+.nav {
+	border-right: solid 1px black;
+	font-size: 150%;
+	text-transform: uppercase;
+	width: 15%;
+}
+
+.nav ul {
+	height: 100%;
+	list-style: none;
+}
+
+.nav ul li {
+	align-items: center;
+	cursor: pointer;
+	display: flex;
+	height: 33%;
+	justify-content: center;
+}
+
+#nav-projects {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+}
+
+.name {
+	border-right: solid 1px black;
+	display: flex;
+	font-size: 750%;
+	justify-content: center;
+	width: 75%;
+}
+
+.name-letter {
+	
+	height: 100%;
+	margin: 0 2%;
+	position: relative;
+}
+
+#avatar {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+}
+
+#head {
+	background-color: black;
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+
+#avatar {
+	width: 10%;
+}
+
+.section-title {
+	align-items: center;
+	display: flex;
+	font-size: 48px;
+	justify-content: center;
+	text-transform: uppercase;
+	width: 40%;
+}
+
+.about {
+	display: flex;
+}
+
+.about-body {
+	margin-top: 20px;
+	display: inline-grid;
+	grid-template-columns: 33% 34% 33%;
+	grid-template-rows: 75% 25%;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 24px;
+	line-height: 36px;
+}
+
+.about-body p {
+	box-sizing: border-box;
+	padding: 25px 25px 0 25px;
+}
+
+.about-body p:nth-of-type(1) {
+	grid-row: 1 / span 2;
+}
+
+#about-icons {
+	background: black;
+	color: white;
+	grid-column: 2 / span 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.project {
+	height: 250px;
+	position: relative;
+	width: 50%;
+}
+
+.project-image {
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	height: 75%;
+}
+
+#sample-tracker-project .project-image {
+	background-image: url("sample-tracker-screenshot.png");
+}
+
+#studii-project .project-image {
+	background-image: url("studii-screenshot.png");
+}
+
+#knitting-project .project-image {
+	background-image: url("knitting-screenshot.png");
+}
+
+#cache-project .project-image {
+	background-image: url("cache-screenshot.png");
+}
+
+.blurb {
+	background-color: rgba(0, 0, 0, 0.75);
+	color: white;
+	display: none;
+	position: absolute;
+	top: 0;
+}
+
+#sample-tracker-blurb.active {
+	display: block;
+}
+
+
+
+
+
+
+
+
