@@ -11,15 +11,6 @@ a {
 	text-decoration: none;
 }
 
-section {
-	border: solid 1px black;
-	border-top: none;
-
-	box-sizing: border-box;
-		display: flex;
-	padding: 50px 25px;
-}
-
 .main {
 	align-content: flex-start;
 	display: flex;
@@ -32,18 +23,13 @@ section {
 
 
 header {
-	border: solid 1px black;
-	display: flex;
-	height: 130px;
 	margin-top: 20px;
 	width: 100%;
 }
 
 .nav {
-	border-right: solid 1px black;
 	font-size: 150%;
 	text-transform: uppercase;
-	width: 15%;
 }
 
 .nav ul {
@@ -57,6 +43,11 @@ header {
 	display: flex;
 	height: 33%;
 	justify-content: center;
+	padding: 10px;
+}
+
+#nav-about {
+	border-top: 1px solid black;
 }
 
 #nav-projects {
@@ -64,17 +55,19 @@ header {
 	border-top: 1px solid black;
 }
 
+#nav-contact {
+	border-bottom: 1px solid black;
+}
+
 .name {
-	border-right: solid 1px black;
+	align-items: center;
 	display: flex;
-	font-size: 750%;
+	font-size: 250%;
 	justify-content: center;
-	width: 75%;
+	padding: 20px 0;
 }
 
 .name-letter {
-	
-	height: 100%;
 	margin: 0 2%;
 	position: relative;
 }
@@ -83,6 +76,7 @@ header {
 	align-items: center;
 	display: flex;
 	justify-content: center;
+	margin-top: 50px;
 }
 
 #head {
@@ -92,21 +86,13 @@ header {
 	width: 50px;
 }
 
-#avatar {
-	width: 10%;
-}
-
 .section-title {
-	font-size: 52px;
-	padding: 0 0 10px 25px;
+	font-size: 36px;
 	text-transform: uppercase;
 	width: 100%;
 }
 
 .about-body {
-	display: inline-grid;
-	grid-template-columns: 33% 34% 33%;
-	grid-template-rows: 75% 25%;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 24px;
 	line-height: 36px;
@@ -115,7 +101,7 @@ header {
 
 .about-body p {
 	box-sizing: border-box;
-	padding: 0 25px;
+	padding: 25px;
 }
 
 .about-body p:nth-of-type(1) {
@@ -134,18 +120,20 @@ header {
 #projects {
 	flex-wrap: wrap;
 	justify-content: space-between;
+	margin-top: 50px;
 	width: 100%;
 }
 
 .project {
 	height: 500px;
+	margin-bottom: 25px;
 	position: relative;
-	min-width: 400px;
-	width: 33%;
 }
 
 .project-image {
 	height: 350px;
+	margin: auto;
+	max-width: 450px;
 	width: 100%;
 }
 
@@ -159,7 +147,6 @@ header {
 	border-radius: 20px;
 	box-sizing: border-box;
 	padding: 0 20px;
-/*	color: white;*/
 	font-size: 36px;
 	height: 150px;
 	overflow: hidden;
@@ -176,20 +163,14 @@ header {
 }
 
 #sample-tracker-information {
-/*	background-color: #1d0047;*/
-	/*border: solid 3px #1d0047;*/
 	border: solid 3px #60f;
 }
 
 #cache-information {
-	/*background-color: #470036;*/
-	/*border: solid 3px #470036;*/
 	border: solid 3px #f09;
 }
 
 #knitting-information {
-/*	background-color: #002333;*/
-	/*border: solid 3px #002333;*/
 	border: solid 3px #00ffb3;
 }
 
@@ -232,8 +213,84 @@ header {
 	width: 25px;
 }
 
+@media screen and (min-width: 992px) {
+  	header {
+  		border: solid 1px black;
+  		display: flex;
+  		height: 130px;
+  	}
 
+  	.name {
+		border-right: solid 1px black;
+		font-size: 600%;
+		padding: 0;
+		width: 75%;
+	}
 
+	.nav {
+		border-right: solid 1px black;
+		width: 15%;
+	}
+
+	.nav ul li {
+		padding: 0;
+	}
+
+	#nav-about {
+		border-top: none;
+	}
+
+	#nav-contact {
+		border-bottom: none;
+	}	
+
+	#avatar {
+		margin-top: 0px;
+		width: 10%;
+	}
+
+	.about-body {
+		display: inline-grid;
+		grid-template-columns: 33% 34% 33%;
+		grid-template-rows: 75% 25%;
+	}	
+
+	.about-body p {
+		box-sizing: border-box;
+		padding: 0 25px;
+	}
+
+	section {
+		border: solid 1px black;
+		border-top: none;
+		box-sizing: border-box;
+		display: flex;
+		padding: 50px 25px;
+	}
+
+	.section-title {
+		font-size: 52px;
+		padding: 0 0 10px 25px;
+		text-transform: uppercase;
+		width: 100%;
+	}
+
+	#projects {
+		margin-top: 0;
+	}
+
+	.project {
+		position: relative;
+		min-width: 400px;
+		width: 33%;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+  	.name {
+		font-size: 750%;
+	}
+  }
 
 
 
