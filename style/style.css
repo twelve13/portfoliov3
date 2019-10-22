@@ -11,6 +11,10 @@ a {
 	text-decoration: none;
 }
 
+section {
+	width: 100%;
+}
+
 .main {
 	align-content: flex-start;
 	display: flex;
@@ -213,6 +217,27 @@ header {
 	width: 25px;
 }
 
+#contacts {
+	display: flex;
+	justify-content: center;
+	margin-top: 60px;
+}
+
+#contacts ul {
+	list-style: none;
+}
+
+#contacts ul li {
+	display: inline-block;
+	margin: 0 10px;
+	text-align: center;
+}
+
+#contacts a {
+	color: slategray;
+}
+
+
 @media screen and (min-width: 992px) {
   	header {
   		border: solid 1px black;
@@ -283,6 +308,10 @@ header {
 		position: relative;
 		min-width: 400px;
 		width: 33%;
+	}
+
+	#contacts {
+		margin-top: 0;
 	}
 }
 
