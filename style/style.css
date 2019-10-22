@@ -98,6 +98,10 @@ header {
 	width: 50px;
 }
 
+#about {
+	border-bottom: solid 2px black;
+}
+
 .section-title {
 	font-size: 36px;
 	text-transform: uppercase;
@@ -121,12 +125,7 @@ header {
 }
 
 #about-icons {
-	align-items: center;
-	background: black;
-	color: white;
-	display: flex;
-	grid-column: 2 / span 2;
-	justify-content: center;
+	display: none;
 }
 
 #projects {
@@ -282,6 +281,10 @@ header {
 		width: 10%;
 	}
 
+	#about {
+		border-bottom: solid 1px black;
+	}
+
 	.about-body {
 		display: inline-grid;
 		grid-template-columns: 33% 34% 33%;
@@ -291,6 +294,32 @@ header {
 	.about-body p {
 		box-sizing: border-box;
 		padding: 0 25px;
+	}
+
+	#about-icons {
+		align-items: center;
+		background: black;
+		color: white;
+		display: flex;
+		grid-column: 2 / span 2;
+		justify-content: center;
+	}
+
+	#about-icons img {
+		cursor: pointer;
+		margin: 0 20px;
+	}
+
+	.science-highlight {
+		color: #0cf;
+	}
+
+	.art-highlight {
+		color: #f06;
+	}
+
+	.magic-highlight {
+		color: #7a00e6;
 	}
 
 	section {

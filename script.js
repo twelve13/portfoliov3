@@ -13,6 +13,13 @@ let knittingInformation = document.getElementById("knitting-information");
 let knittingToggle = document.getElementById("knitting-toggle");
 let knittingActive = false;
 
+let scienceIcon = document.getElementById("science-icon");
+let scienceSpan = document.getElementsByClassName("science-span");
+let artIcon = document.getElementById("art-icon");
+let artSpan = document.getElementsByClassName("art-span");
+let magicIcon = document.getElementById("magic-icon");
+let magicSpan = document.getElementsByClassName("magic-span");
+
 
 function showInformation(project, toggle) {
 	var height = 30;
@@ -57,6 +64,42 @@ cacheTitle.addEventListener("click", function() {
 knittingTitle.addEventListener("click", function() {
 	knittingActive = !knittingActive;
 	knittingActive ? showInformation(knittingInformation, knittingToggle) : hideInformation(knittingInformation, knittingToggle);
+})
+
+scienceIcon.addEventListener("mouseenter", function() {
+	for(let i=0; i<scienceSpan.length; i++){
+		scienceSpan[i].classList.add("science-highlight");
+	}
+})
+
+scienceIcon.addEventListener("mouseleave", function() {
+	for(let i=0; i<scienceSpan.length; i++){
+		scienceSpan[i].classList.remove("science-highlight");
+	}
+})
+
+artIcon.addEventListener("mouseenter", function() {
+	for(let i=0; i<artSpan.length; i++){
+		artSpan[i].classList.add("art-highlight");
+	}
+})
+
+artIcon.addEventListener("mouseleave", function() {
+	for(let i=0; i<artSpan.length; i++){
+		artSpan[i].classList.remove("art-highlight");
+	}
+})
+
+magicIcon.addEventListener("mouseenter", function() {
+	for(let i=0; i<magicSpan.length; i++){
+		magicSpan[i].classList.add("magic-highlight");
+	}
+})
+
+magicIcon.addEventListener("mouseleave", function() {
+	for(let i=0; i<magicSpan.length; i++){
+		magicSpan[i].classList.remove("magic-highlight");
+	}
 })
 
 
