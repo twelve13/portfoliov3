@@ -50,6 +50,14 @@ header {
 	padding: 10px;
 }
 
+.nav a {
+	color: black;
+}
+
+.nav a:visited {
+	color: black;
+}
+
 #nav-about {
 	border-top: 1px solid black;
 }
@@ -113,12 +121,12 @@ header {
 }
 
 #about-icons {
+	align-items: center;
 	background: black;
 	color: white;
-	grid-column: 2 / span 2;
 	display: flex;
+	grid-column: 2 / span 2;
 	justify-content: center;
-	align-items: center;
 }
 
 #projects {
@@ -150,10 +158,10 @@ header {
 	bottom: 0;
 	border-radius: 20px;
 	box-sizing: border-box;
-	padding: 0 20px;
 	font-size: 36px;
 	height: 150px;
 	overflow: hidden;
+	padding: 0 20px;
 	position: absolute;
 	width: 100%;
 }
@@ -217,23 +225,23 @@ header {
 	width: 25px;
 }
 
-#contacts {
+#contact {
 	display: flex;
 	justify-content: center;
 	margin-top: 60px;
 }
 
-#contacts ul {
+#contact ul {
 	list-style: none;
 }
 
-#contacts ul li {
+#contact ul li {
 	display: inline-block;
 	margin: 0 10px;
 	text-align: center;
 }
 
-#contacts a {
+#contact a {
 	color: slategray;
 }
 
@@ -310,7 +318,7 @@ header {
 		width: 33%;
 	}
 
-	#contacts {
+	#contact {
 		margin-top: 0;
 	}
 }
