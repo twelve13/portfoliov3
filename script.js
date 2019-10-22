@@ -1,74 +1,20 @@
-// let sampleTrackerProject = document.getElementById("sample-tracker-project");
-// let sampleTrackerTitle = document.getElementById("sample-tracker-title");
-// let cacheProject = document.getElementById("cache-project");
-// let cacheTitle = document.getElementById("cache-title");
-// let knittingProject = document.getElementById("knitting-project");
-// let knittingTitle = document.getElementById("knitting-title");
-
-// function moveTitleLeft (project) {
-// 	var pos = 0;
-// 	var interval = setInterval(frame, 5);
-// 	function frame() {
-// 		if (pos == 50) {
-// 			clearInterval(interval);
-// 		} else {
-// 			pos++;
-// 			project.style.right = pos + "%";
-// 		}
-// 	}
-// }
-
-// function moveTitleRight (project) {
-// 	var pos = 50;
-// 	var interval = setInterval(frame, 5);
-// 	function frame() {
-// 		if (pos == 0) {
-// 			clearInterval(interval);
-// 		} else {
-// 			pos--;
-// 			project.style.right = pos + "%";
-// 		}
-// 	}
-// }
-
-// sampleTrackerProject.addEventListener("mouseenter", function() {
-// 	moveTitleLeft(sampleTrackerTitle);
-// })
-
-// sampleTrackerProject.addEventListener("mouseleave", function() {
-// 	moveTitleRight(sampleTrackerTitle);
-// })
-
-// cacheProject.addEventListener("mouseenter", function() {
-// 	moveTitleLeft(cacheTitle);
-// })
-
-// cacheProject.addEventListener("mouseleave", function() {
-// 	moveTitleRight(cacheTitle);
-// })
-
-// knittingProject.addEventListener("mouseenter", function() {
-// 	moveTitleLeft(knittingTitle);
-// })
-
-// knittingProject.addEventListener("mouseleave", function() {
-// 	moveTitleRight(knittingTitle);
-// })
-
-
 let sampleTrackerTitle = document.getElementById("sample-tracker-title");
 let sampleTrackerInformation = document.getElementById("sample-tracker-information");
+let sampleTrackerToggle = document.getElementById("sample-tracker-toggle");
+let sampleTrackerActive = false;
 
 let cacheTitle = document.getElementById("cache-title");
 let cacheInformation = document.getElementById("cache-information");
+let cacheToggle = document.getElementById("cache-toggle");
+let cacheActive = false;
 
 let knittingTitle = document.getElementById("knitting-title");
 let knittingInformation = document.getElementById("knitting-information");
+let knittingToggle = document.getElementById("knitting-toggle");
+let knittingActive = false;
 
 
-
-
-function showInformation(project) {
+function showInformation(project, toggle) {
 	var height = 30;
 	var interval = setInterval(frame, 5);
 	function frame() {
@@ -80,18 +26,37 @@ function showInformation(project) {
 			project.style.height = height + "%";
 		}
 	}
+	toggle.style.transform = "rotate(180deg)";
+}
+
+function hideInformation(project, toggle) {
+	var height = 100;
+	var interval = setInterval(frame, 5);
+	function frame() {
+		if (height == 30) {
+			clearInterval(interval);
+			
+		} else {
+			height--;
+			project.style.height = height + "%";
+		}
+	}
+	toggle.style.transform = "rotate(0deg)";
 }
 
 sampleTrackerTitle.addEventListener("click", function() {
-	showInformation(sampleTrackerInformation);
+	sampleTrackerActive = !sampleTrackerActive;
+	sampleTrackerActive ? showInformation(sampleTrackerInformation, sampleTrackerToggle) : hideInformation(sampleTrackerInformation, sampleTrackerToggle);
 })
 
 cacheTitle.addEventListener("click", function() {
-	showInformation(cacheInformation);
+	cacheActive = !cacheActive;
+	cacheActive ? showInformation(cacheInformation, cacheToggle) : hideInformation(cacheInformation, cacheToggle);
 })
 
 knittingTitle.addEventListener("click", function() {
-	showInformation(knittingInformation);
+	knittingActive = !knittingActive;
+	knittingActive ? showInformation(knittingInformation, knittingToggle) : hideInformation(knittingInformation, knittingToggle);
 })
 
 
