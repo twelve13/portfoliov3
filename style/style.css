@@ -27,6 +27,7 @@ section {
 
 
 header {
+	height: 45vh;
 	margin-top: 20px;
 	width: 100%;
 }
@@ -85,17 +86,89 @@ header {
 }
 
 #avatar {
-	align-items: center;
 	display: flex;
 	justify-content: center;
-	margin-top: 50px;
+}
+
+#self-portrait {
+	position: relative;
+	width: 68px;
+}
+
+#self-portrait div {
+	position: absolute;
+}
+
+#hair {
+	background-color: black;
+	border-radius: 45% 45% 0 0;
+	height: 90px;
+	top: 20px;
+	width: 68px;
 }
 
 #head {
+	background-color: white;
+	border-bottom: solid 2px black;
+	border-radius: 0 0 50% 50%;
+	height: 45px;
+	left: 13px;
+	top: 40px;
+	width: 42px;
+}
+
+#bangs-left {
 	background-color: black;
+	border-radius: 40%;
+	height: 20px;
+	top: 27px;
+	transform: rotate(-35deg);
+	width: 48px;
+}
+
+#bangs-right {
+	background-color: black;
+	border-radius: 40%;
+	height: 15px;
+	left: 31px;
+	top: 29px;
+	transform: rotate(20deg);
+	width: 31px;
+}
+
+#neck {
+	background-color: white;
+	border-radius: 0 0 50% 50%;
+	height: 20px;
+	left: 26px;
+	top: 85px;
+	width: 16px;
+}
+
+.glasses {
+	background-color: white;
+	border: solid 2px black;
+	border-radius: 5px;
+	height: 10px;
+	top: 50px;
+	width: 12px;
+}
+
+#glasses-left {
+	left: 15px;
+}
+
+#glasses-right {
+	left: 37px;
+}
+
+#glasses-bridge {
+	border-top: solid 2px black;
 	border-radius: 50%;
-	height: 50px;
-	width: 50px;
+	height: 7px;
+	left: 31px;
+	top: 52px;
+	width: 6px;
 }
 
 #about {
