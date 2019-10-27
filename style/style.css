@@ -189,7 +189,7 @@ header {
 	position: relative;
 	right: 500%;
 	width: 500%;
-	animation: scrollTags 12s infinite;
+	animation: scrollTagsMobile 12s infinite;
 }
 
 #about {
@@ -444,6 +444,10 @@ header {
 	#contact {
 		margin-top: 0;
 	}
+
+	#tag-scroll {
+		animation: scrollTags 12s infinite;
+	}
 }
 
 @media screen and (min-width: 1200px) {
@@ -459,6 +463,15 @@ header {
   40% {right: 295%;}
   60% {right: 192%;}
   80% {right: 96%;}
+  100% {right: 0;}
+}
+
+@keyframes scrollTagsMobile {
+  0% {right: 500%;}
+  20% {right: 400%;}
+  40% {right: 298%;}
+  60% {right: 196%;}
+  80% {right: 98%;}
   100% {right: 0;}
 }
 
