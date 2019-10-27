@@ -459,20 +459,22 @@ header {
 
 @keyframes scrollTags {
   0% {right: 500%;}
-  20% {right: 400%;}
-  40% {right: 295%;}
-  60% {right: 192%;}
-  80% {right: 96%;}
-  100% {right: 0;}
+  17% {right: 400%;}
+  34% {right: 295%;}
+  51% {right: 192%;}
+  68% {right: 96%;}
+  85% {right: 0;}
+  100% {right: -100%;}
 }
 
 @keyframes scrollTagsMobile {
   0% {right: 500%;}
-  20% {right: 400%;}
-  40% {right: 298%;}
-  60% {right: 196%;}
-  80% {right: 98%;}
-  100% {right: 0;}
+  17% {right: 400%;}
+  34% {right: 298%;}
+  51% {right: 196%;}
+  68% {right: 98%;}
+  85% {right: 0;}
+  100% {right: -100%;}
 }
 
 
