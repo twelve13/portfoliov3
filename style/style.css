@@ -272,11 +272,11 @@ header {
 }
 
 #cache-information {
-	border: solid 3px #f09;
+	border: solid 3px #aa37d7;
 }
 
 #knitting-information {
-	border: solid 3px #00ffb3;
+	border: solid 3px #3857d7;
 }
 
 .project-description {
@@ -319,8 +319,10 @@ header {
 }
 
 #css-art {
+	border-bottom: solid 1px black;
 	display: flex;
 	flex-wrap: wrap;
+	padding-bottom: 10%;
 }
 
 #css-art-title {
@@ -352,6 +354,7 @@ header {
 	display: flex;
 	justify-content: center;
 	margin-top: 60px;
+	padding-bottom: 5%;
 }
 
 #contact ul {
