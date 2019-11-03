@@ -194,6 +194,7 @@ header {
 
 #about {
 	border-bottom: solid 2px black;
+	justify-content: center;
 }
 
 .section-title {
@@ -356,7 +357,7 @@ header {
 	flex-wrap: wrap;
 	justify-content: center;
 	margin-top: 60px;
-	padding-bottom: 5%;
+	padding: 25px;
 }
 
 #contact ul {
@@ -523,6 +524,12 @@ header {
 		font-size: 750%;
 	}
   }
+
+@media screen and (min-width: 1500px) {
+  	section {
+		padding: 70px 25px;
+	}
+}
 
 
 @keyframes scrollTags {
