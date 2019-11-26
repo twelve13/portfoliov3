@@ -1,5 +1,5 @@
 # My Portfolio
 
-[published site](carolinechen.io)
+[Please visit the site](carolinechen.io)
 
-![portfolio screenshot](portfolio-screenshot.png)
+![portfolio screenshot](portfolio-screenshot2.png)
